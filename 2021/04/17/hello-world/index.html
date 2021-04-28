@@ -376,18 +376,18 @@
 
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
-            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
             <li class="tab"><a href="#comment-disqus">disqus</a></li>
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane disqusjs" id="comment-disqusjs">
+            <div class="tab-pane disqus" id="comment-disqus">
               
   <div class="comments" id="disqus_thread">
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
             </div>
-            <div class="tab-pane disqus" id="comment-disqus">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
               
   <div class="comments" id="disqus_thread">
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
@@ -495,23 +495,6 @@
   
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
-
-<script>
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : '' || 'https://disqus.com/api/',
-      apikey    : '0LPwaE9XE47zhMsHLBpuhEvHErJMKVzm7FvRlp2pTZT6ECiH9YPFglOX3jiFeBso',
-      shortname : 'yusens-blog',
-      url       : "http://example.com/2021/04/17/hello-world/",
-      identifier: "2021/04/17/hello-world/",
-      title     : "Hello World",
-    });
-  }, window.DisqusJS);
-});
-</script>
-
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -541,6 +524,23 @@ NexT.utils.loadComments('#disqus_thread', () => {
       (d.head || d.body).appendChild(s);
     }
   });
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments('#disqus_thread', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : '' || 'https://disqus.com/api/',
+      apikey    : '0LPwaE9XE47zhMsHLBpuhEvHErJMKVzm7FvRlp2pTZT6ECiH9YPFglOX3jiFeBso',
+      shortname : 'yusens-blog',
+      url       : "http://example.com/2021/04/17/hello-world/",
+      identifier: "2021/04/17/hello-world/",
+      title     : "Hello World",
+    });
+  }, window.DisqusJS);
+});
 </script>
 
 </body>
