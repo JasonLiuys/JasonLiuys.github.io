@@ -257,7 +257,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-10-13 10:46:11 / 修改时间：11:29:21" itemprop="dateCreated datePublished" datetime="2021-10-13T10:46:11+08:00">2021-10-13</time>
+      <time title="创建时间：2021-10-13 10:46:11 / 修改时间：11:43:52" itemprop="dateCreated datePublished" datetime="2021-10-13T10:46:11+08:00">2021-10-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -302,19 +302,14 @@
 <blockquote>
 <p>分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！</p>
 </blockquote>
-<ol start="2" type="1">
-<li>解除本地库和远程库的绑定关系</li>
-</ol>
-<p>$ git remote -v : 查看关联远程库的信息</p>
-<p>$ git remote rm origin : 解除本地库和远程origin库的关系</p>
-<blockquote>
-<p>这里只是解除连接关系，并不是删除远程库上的文件；如果要删除文件，需要在Github上删除</p>
-</blockquote>
-<ol start="3" type="1">
-<li>将Github上的远程仓库克隆到本地</li>
-</ol>
-<p>$ git clone git@github.com:JasonLiuys/gitskill.git</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/10/13/git3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -371,7 +366,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-13 10:43:34" itemprop="dateModified" datetime="2021-10-13T10:43:34+08:00">2021-10-13</time>
+        <time title="修改时间：2021-10-13 11:43:51" itemprop="dateModified" datetime="2021-10-13T11:43:51+08:00">2021-10-13</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -426,33 +421,14 @@
 <p>Head表示当前版本，Head<sup>表示上一个版本，Head</sup>^表示上上个版本，以此类推 （Head其实为指针）</p>
 <p>git reset --hard Head^ 可以回溯至上个版本</p>
 </blockquote>
-<ol start="5" type="1">
-<li><p>git reflog 显示每一次历史命令（可以用于查询已回溯的版本commit，然后通过reset命令来撤销回溯）</p></li>
-<li><p>git工作区(Working Directory)，版本库(Repository)，暂存区(Stage)和分支(如master分支)：</p></li>
-</ol>
-<ul>
-<li>工作区：电脑里的git项目文件夹</li>
-<li>版本库：项目文件夹中的.git隐藏目录</li>
-<li>暂存区：用git add添加文件，实际上就是把文件修改添加到暂存区</li>
-<li>分支：用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/basic-usage.svg"  width = "600" height = "400" alt="工作区与版本库的交互" align=center /></p>
-<ol start="7" type="1">
-<li><p>git checkout -- filename : 把文件在工作区的修改全部撤销</p></li>
-<li><p>git reset HEAD filename : 把暂存区的修改撤销掉（unstage），重新放回工作区</p></li>
-</ol>
-<blockquote>
-<p><strong>所以如果错误内容已经add到暂存区时，需要使用87两个命令完全撤销</strong></p>
-<p><strong>如果错误内容已经commit到版本库，需要使用命令4来回溯版本</strong></p>
-</blockquote>
-<ol start="9" type="1">
-<li>git rm filename : 删除工作区的文件</li>
-</ol>
-<blockquote>
-<p><strong>如果误删，可以通过git checkout -- filename来把文件复原到最新版本</strong></p>
-<p><strong>git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”</strong>。</p>
-</blockquote>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/10/12/git2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -509,7 +485,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-12 10:49:24" itemprop="dateModified" datetime="2021-10-12T10:49:24+08:00">2021-10-12</time>
+        <time title="修改时间：2021-10-13 11:43:49" itemprop="dateModified" datetime="2021-10-13T11:43:49+08:00">2021-10-13</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -554,24 +530,14 @@
 <p>集中式版本控制系统：图书馆存取，修改时要先下载再上传到集中服务器上</p>
 <p>分布式版本控制系统：每个人电脑都有完整的版本库，修改时互相推送</p>
 </blockquote>
-<ul>
-<li>git中用户名和邮箱的作用：是本地git客户端的一个变量，不随git库而改变</li>
-</ul>
-<ol type="1">
-<li>查看用户名和邮箱地址： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config user.name</span><br><span class="line"></span><br><span class="line">$ git config user.email</span><br></pre></td></tr></table></figure></li>
-<li>修改用户名和邮箱地址： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot;</span><br><span class="line"></span><br><span class="line">$ git config --global user.email &quot;email&quot;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>版本库 Repository</li>
-</ul>
-<ol type="1">
-<li><p>创建版本库 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir learngit #新建目录</span><br><span class="line">$ cd learngit</span><br><span class="line">$ pwd  #查看当前目录</span><br><span class="line">$ git init  #把这个目录变成Git可以管理的仓库</span><br></pre></td></tr></table></figure></p></li>
-<li><p>把一个文件放在仓库里 2.1 把文件放在仓库目录里 2.2 把文件添加到仓库里 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add learngit.txt</span><br></pre></td></tr></table></figure> 2.3 把文件提交到仓库里 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;add a new file&quot; #-m后面输入本次提交的说明</span><br></pre></td></tr></table></figure></p></li>
-</ol>
-<blockquote>
-<p>什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以你可以多次add不同的文件</p>
-</blockquote>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/10/11/git1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -628,7 +594,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-28 15:52:49" itemprop="dateModified" datetime="2021-04-28T15:52:49+08:00">2021-04-28</time>
+        <time title="修改时间：2021-10-13 11:43:24" itemprop="dateModified" datetime="2021-10-13T11:43:24+08:00">2021-10-13</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -676,21 +642,14 @@
   });
 </script>
 <p>新建文章：hexo new '文章标题' 生成静态文件：hexo g 部署文件：hexo d 文件生成后立刻部署网站：hexo g -d 启动服务器：hexo s 清除缓存文件：hexo clean 新建草稿：hexo new draft '文章标题' 发表草稿：hexo publish [layout] <filename></p>
-<p><span class="math display">\[
-\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}
-\]</span></p>
-<p>C语言里的函数 <code>scanf()</code> 怎么使用？</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, World!&quot;</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">include  &lt;stdio.h&gt;</span><br><span class="line"><span class="built_in">int</span> main(void)&#123;</span><br><span class="line">  printf(<span class="string">&quot;Hello world\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/YoshinoyamaSpring_ZH-CN5545606722_1920x1080.jpg"  width = "300" height = "200" alt="图片名称" align=center /></p>
-<p>Markdown 插入图片： <img src="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/YoshinoyamaSpring_ZH-CN5545606722_1920x1080.jpg" title="测试图片" alt="avatar" /></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/Hexo%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0%E6%AD%A5%E9%AA%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
