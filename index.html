@@ -173,7 +173,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -232,6 +232,114 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/13/git3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/profile_img.jpg">
+      <meta itemprop="name" content="Yusen">
+      <meta itemprop="description" content="Live and learn">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yusen的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/13/git3/" class="post-title-link" itemprop="url">Git03-远程仓库</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-10-13 10:46:11 / 修改时间：11:28:33" itemprop="dateCreated datePublished" datetime="2021-10-13T10:46:11+08:00">2021-10-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>539</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="使用github远程仓库">使用Github远程仓库</h3>
+<ol type="1">
+<li>上传本地仓库到Github <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#首先在Github上新建同名仓库</span><br><span class="line">$ git remote add origin git@github.com:JasonLiuys&#x2F;learngit.git  #将本地仓库关联到远程Github服务器（origin指github远程服务器的默认命名）</span><br><span class="line"></span><br><span class="line">$ git push -u origin master  #将本地内容推送的远程库上（master指github默认的分支，现在为main分支）（-u参数会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。）</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<blockquote>
+<p>分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！</p>
+</blockquote>
+<ol start="2" type="1">
+<li>解除本地库和远程库的绑定关系</li>
+</ol>
+<p>$ git remote -v : 查看关联远程库的信息</p>
+<p>$ git remote rm origin : 解除本地库和远程origin库的关系</p>
+<blockquote>
+<p>这里只是解除连接关系，并不是删除远程库上的文件；如果要删除文件，需要在Github上删除</p>
+</blockquote>
+<ol start="3" type="1">
+<li>将Github上的远程仓库克隆到本地</li>
+</ol>
+<p>$ git clone git@github.com:JasonLiuys/gitskill.git</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/12/git2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -255,10 +363,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-10-12 10:54:56 / 修改时间：17:55:34" itemprop="dateCreated datePublished" datetime="2021-10-12T10:54:56+08:00">2021-10-12</time>
+      <time title="创建时间：2021-10-12 10:54:56" itemprop="dateCreated datePublished" datetime="2021-10-12T10:54:56+08:00">2021-10-12</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-10-13 10:43:34" itemprop="dateModified" datetime="2021-10-13T10:43:34+08:00">2021-10-13</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -756,14 +870,14 @@ a &amp;= b + c \\
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">3k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">3 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
