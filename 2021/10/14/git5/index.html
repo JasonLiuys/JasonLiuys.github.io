@@ -24,18 +24,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://example.com/categories/index.html">
+<meta name="description" content="###使用GitHub多人协作 使用Git可以轻松的实现多人协作 当你从远程仓库克隆时，实际上Git自动把本地的master(main)分支和远程的master(main)分支对应起来了，并且，远程仓库的默认名称是origin  master(main)分支是主分支，因此要时刻与远程同步； dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步； bug分支只用于在本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git05-使用Github多人协作">
+<meta property="og:url" content="http://example.com/2021/10/14/git5/index.html">
 <meta property="og:site_name" content="Yusen的博客">
+<meta property="og:description" content="###使用GitHub多人协作 使用Git可以轻松的实现多人协作 当你从远程仓库克隆时，实际上Git自动把本地的master(main)分支和远程的master(main)分支对应起来了，并且，远程仓库的默认名称是origin  master(main)分支是主分支，因此要时刻与远程同步； dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步； bug分支只用于在本">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-22T07:04:32.000Z">
-<meta property="article:modified_time" content="2021-04-22T07:05:24.173Z">
+<meta property="article:published_time" content="2021-10-14T03:09:55.000Z">
+<meta property="article:modified_time" content="2021-10-14T03:28:29.374Z">
 <meta property="article:author" content="Yusen">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/categories/">
+<link rel="canonical" href="http://example.com/2021/10/14/git5/">
 
 
 <script class="page-configurations">
@@ -43,12 +46,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>categories | Yusen的博客
-</title>
+<title>Git05-使用Github多人协作 | Yusen的博客</title>
   
 
 
@@ -223,43 +225,159 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
   
   
 
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/14/git5/">
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/profile_img.jpg">
+      <meta itemprop="name" content="Yusen">
+      <meta itemprop="description" content="Live and learn">
+    </span>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yusen的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Git05-使用Github多人协作
+        </h1>
 
-<div class="post-meta-container">
-</div>
-
-</header>
-
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-      
-      <div class="post-body"><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 2 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a><span class="category-list-count">1</span></li></ul>
-  </div>
-</div>
 
+      <time title="创建时间：2021-10-14 11:09:55 / 修改时间：11:28:29" itemprop="dateCreated datePublished" datetime="2021-10-14T11:09:55+08:00">2021-10-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
       </div>
-      
-      
-      
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>796</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>###使用GitHub多人协作</p>
+<p>使用Git可以轻松的实现多人协作</p>
+<p>当你从远程仓库克隆时，实际上Git自动把本地的master(main)分支和远程的master(main)分支对应起来了，并且，远程仓库的默认名称是origin</p>
+<ul>
+<li><p>master(main)分支是主分支，因此要时刻与远程同步；</p></li>
+<li><p>dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；</p></li>
+<li><p>bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；</p></li>
+<li><p>feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。</p></li>
+</ul>
+<span id="more"></span>
+<p><strong>多人协作的工作模式通常是这样：</strong></p>
+<ul>
+<li><p>首先，可以试图用git push origin <branch-name>推送自己的修改；</p></li>
+<li><p>如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；</p></li>
+<li><p>如果合并有冲突，则解决冲突，并在本地提交；</p></li>
+<li><p>没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！</p></li>
+<li><p>如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to=origin/<branch> dev。</p></li>
+</ul>
+<p>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</p>
+<p><strong>命令小结</strong></p>
+<ul>
+<li><p>查看远程库信息，使用git remote -v；</p></li>
+<li><p>本地新建的分支如果不推送到远程，对其他人就是不可见的；</p></li>
+<li><p>从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；</p></li>
+<li><p>在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；</p></li>
+<li><p>建立本地分支和远程分支的关联，使用git branch --set-upstream-to=origin/<branch> dev；</p></li>
+<li><p>从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。</p></li>
+</ul>
+
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="Yusen 微信">
+        <span>微信</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/10/13/git4/" rel="prev" title="Git04-分支管理">
+                  <i class="fa fa-chevron-left"></i> Git04-分支管理
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 
