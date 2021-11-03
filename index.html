@@ -173,20 +173,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -223,6 +223,183 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/03/D2L-00/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/JasonLiuys/ImagesRepo/main/blog_images/profile_img.jpg">
+      <meta itemprop="name" content="Yusen">
+      <meta itemprop="description" content="Live and learn">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yusen的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/03/D2L-00/" class="post-title-link" itemprop="url">DL01-绪论</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-03 22:15:32 / 修改时间：22:20:31" itemprop="dateCreated datePublished" datetime="2021-11-03T22:15:32+08:00">2021-11-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Dive-into-Deep-Learning%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Dive into Deep Learning笔记</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="dl01-绪论">DL01-绪论</h1>
+<h2 id="深度学习一种结合了代码数学和html的媒介">1. 深度学习：一种结合了代码、数学和HTML的媒介</h2>
+<p>深度学习和机器学习现在已经渗透到了各行各业，研究深度学习可以从基础算法研究和多学科交叉应用研究切入。而现在大量的交叉学科应用给深度学习的从业者带来了独特的挑战，应用深度学习需要同时了解：</p>
+<ol type="1">
+<li>以特定方式提出问题的动机</li>
+<li>给定建模方法的数学</li>
+<li>将模型拟合数据的优化算法</li>
+<li>能够有效训练模型、克服数值计算缺陷并最大限度地利用现有硬件的工程方法</li>
+</ol>
+<h2 id="深度学习的形象概念">2. 深度学习的形象概念</h2>
+<p>相比于市面上的传统软件系统，机器学习算法是一种“灵活”的程序算法，其输入由许多参数决定，然后我们使用数据集来确定当下的“最佳参数集”，性能度量用于判断当前参数集是否为最佳。</p>
+<ol type="1">
+<li>参数：可以看作是旋钮，通过转动旋钮来调整程序的行为</li>
+<li>模型：任一调整了参数的程序（输入-输出映射）；所有不同参数的程序被称为“模型族”</li>
+<li>学习算法：使用数据集来选择参数的元程序</li>
+</ol>
+<h2 id="深度学习的步骤">3. 深度学习的步骤</h2>
+<p>“学习”是一个模型的训练过程，通过这个过程，我们可以发现正确的参数集。训练过程通常包含如下步骤：</p>
+<ol type="1">
+<li>从一个随机初始化参数的模型开始，这个模型基本毫不智能</li>
+<li>获取大量数据样本</li>
+<li>调整参数，使模型在这些样本中表现得更好。</li>
+<li>重复第2步和第3步，直到模型在任务中的表现令你满意</li>
+</ol>
+<h2 id="深度学习的关键组件">4. 深度学习的关键组件</h2>
+<h3 id="我们可以学习的数据data">4.1 我们可以学习的<strong>数据（data）</strong></h3>
+<p>数据集由一个个<strong>样本</strong>组成，最佳情况是遵循独立同分布。</p>
+<blockquote>
+<p>如果随机变量 X1 和 X2 独立，是指 X1 的取值不影响 X2 的取值， X1 的取值也不影响 X2 的取值。【就像抛骰子每次抛到几就是几这就是独立的，但如果要两次抛的和大于8，其余的不算，那么第一次抛和第二次抛就不独立了，因为第二次抛的时候结果是和第一次相关的。】</p>
+</blockquote>
+<blockquote>
+<p>且随机变量 X1 和 X2 服从同一分布。【抛骰子每次得到任意点数的概率都是1/6，这就是同分布的。但如果第一次抛一个6面的色子，第二次抛一个正12面体的色子，就不再是同分布了。】</p>
+</blockquote>
+<p>每个样本由一组<strong>特征（features）</strong>组成，机器学习模型会根据这些特征进行预测。</p>
+<blockquote>
+<p>每个样本的特征类别数量都是相同的，所以其特征向量是固定长度的，这个长度被称为<strong>数据的维度</strong></p>
+</blockquote>
+<blockquote>
+<p>与传统的机器学习方法相比，深度学习的一个主要优势是可以处理不同长度的数据</p>
+</blockquote>
+<p>需要预测的一个特殊的属性被称为<strong>标签（label）</strong></p>
+<h3 id="用于转换数据的模型model">4.2 用于转换数据的<strong>模型（model）</strong></h3>
+<p>深度学习模型由神经网络错综复杂的交织在一起，一个适当的模型包含合适的参数，可以将输入数据转换成我们期望的输出。</p>
+<h3 id="一个目标函数objective-function用来激励模型的学习">4.3 一个<strong>目标函数（objective function）</strong>，用来激励模型的“学习”</h3>
+<p>机器学习为“从经验中学习”，这里说的学习是指自主提高模型完成某些任务的效能。要让模型自主学习，需要使用<strong>目标函数（损失函数）</strong>来优化模型。</p>
+<blockquote>
+<p>当任务为试图预测数值时，最常⻅的损失函数是平⽅误差（squared error），即预测值与实际值之差的平⽅。当试图解决分类问题时，最常⻅的⽬标函数是最小化错误率，即预测与实际情况不符的样本⽐例。有些⽬标函数（如平⽅误差）很容易被优化，有些⽬标（如错误率）由于不可微性或其他复杂性难以直接优化。在这些情况下，通常会优化替代⽬标。</p>
+</blockquote>
+<h3 id="调整模型参数以优化目标函数的优化算法">4.4 调整模型参数以优化目标函数的<strong>优化算法</strong></h3>
+<p>当我们获得了数据集，模型和合适的损失函数之后，我们就需要一种优化算法来搜索出最佳参数（最小化损失函数），大多数流行的优化算法通常基于梯度下降算法（gradient descent）。</p>
+<p>简而⾔之，在每个步骤中，梯度下降法都会检查每个参数，看看如果你仅对该参数进⾏ 少量变动，训练集损失会朝哪个⽅向移动。然后，它在可以减少损失的⽅向上优化参数。</p>
+<h2 id="各种机器学习问题">5. 各种机器学习问题</h2>
+<h3 id="有监督学习">5.1 有监督学习</h3>
+<ol type="1">
+<li>回归问题</li>
+</ol>
+<p>任何有关<strong>“有多少”</strong>的问题很可能就是回归问题。回归问题的常见损失函数为<strong>平方误差损失函数</strong></p>
+<ol start="2" type="1">
+<li>分类问题</li>
+</ol>
+<p>任何有关<strong>“哪一类”</strong>的问题很可能就是分类问题。分类问题的常见损失函数为<strong>交叉熵损失函数</strong></p>
+<ol start="3" type="1">
+<li>标记问题</li>
+</ol>
+<p>学习预测<strong>不相互排斥的类别</strong>的问题称为多标签分类。</p>
+<ol start="4" type="1">
+<li>搜索问题</li>
+</ol>
+<p>搜索结果的自动排序，类似谷歌的PageRank</p>
+<ol start="5" type="1">
+<li>推荐系统</li>
+</ol>
+<p>推荐系统会为“给定用户和物品”的匹配性打分，这个“分数”可能是估计的评价或者购买的概率</p>
+<ol start="6" type="1">
+<li>序列学习</li>
+</ol>
+<p>如机器翻译。医学上序列输入和输出也很重要，假设我们⽤⼀个模型来监控重症监护病⼈，如果他们在未来24小时内死亡的⻛险超过某个阈值，这个模型就会发出警报。我们绝不希望抛弃过去每小时有关病⼈病史的所有信息，而仅根据最近的测量结果做出预测。</p>
+<h3 id="无监督学习">5.2 无监督学习</h3>
+<p>聚类问题：没有标签的情况下，将相似的数据聚类</p>
+<p>主成分分析问题：找到少量的参数来准确的捕捉数据的线性相关属性</p>
+<p>因果关系和概率图模型问题：如果我们有关于房价、污染、犯罪、地理位置、教育和⼯资的⼈口统计数据，我们能否简单地根据经验数据发现它们之间的关系</p>
+<p>生成对抗网络：一种合成数据的方法</p>
+<h3 id="强化学习">5.3 强化学习</h3>
+<p>强化学习的目标是产生一个好的策略（policy），强化学习agent选择的“动作”受策略控制，即策略将环境观察映射到行为。</p>
+<blockquote>
+<p>我们可以将任何监督学习问题转化为强化学习问题，假设我们有一个分类问题，我们可以创建一个强化学习agent，每个分类对应一个“动作”，然后我们可以创建一个环境，该环境给予agent奖励，这个奖励与原始监督学习问题的损失函数是一致的。</p>
+</blockquote>
+<p><strong>强化学习的分类</strong> 1. 当环境可以被完全观察到时，我们将强化学习问题称为<strong>马尔可夫决策过程</strong> 2. 当状态不依赖于之前的操作时，我们将该问题称为<strong>上下文赌博机</strong> 3. 当没有状态，只有一组最初未知回报的可用动作时，这个问题是经典的<strong>多臂赌博机</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -904,7 +1081,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-13 11:43:24" itemprop="dateModified" datetime="2021-10-13T11:43:24+08:00">2021-10-13</time>
+        <time title="修改时间：2021-11-03 22:22:40" itemprop="dateModified" datetime="2021-11-03T22:22:40+08:00">2021-11-03</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -924,7 +1101,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>502</span>
+      <span>531</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -951,7 +1128,15 @@
     }
   });
 </script>
-<p>新建文章：hexo new '文章标题' 生成静态文件：hexo g 部署文件：hexo d 文件生成后立刻部署网站：hexo g -d 启动服务器：hexo s 清除缓存文件：hexo clean 新建草稿：hexo new draft '文章标题' 发表草稿：hexo publish [layout] <filename></p>
+<p>新建文章：hexo new '文章标题'</p>
+<p>生成静态文件：hexo g</p>
+<p>部署文件：hexo d</p>
+<p>文件生成后立刻部署网站：hexo g -d</p>
+<p>启动服务器：hexo s</p>
+<p>清除缓存文件：hexo clean</p>
+<p>创建分类选项：$ hexo new page categories</p>
+<p>新建草稿：hexo new draft '文章标题'</p>
+<p>发表草稿：hexo publish [layout] <filename></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/04/20/Hexo%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0%E6%AD%A5%E9%AA%A4/#more" rel="contents">
@@ -1139,14 +1324,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">8k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
